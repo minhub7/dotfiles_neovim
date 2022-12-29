@@ -2,7 +2,7 @@ local g = vim.g
 
 -- Setting for neovide
 if vim.fn.exists("g:neovide") then
-  vim.opt.guifont = { "D2Codingligature_Nerd_Font", ":h11" }
+  vim.opt.guifont = { "D2Coding_ligature_Nerd", ":h13" }
   g.neovide_scale_factor = 1.0
   g.neovide_floating_blur_amount_x = 1.0
   g.neovide_floating_blur_amount_y = 1.0
