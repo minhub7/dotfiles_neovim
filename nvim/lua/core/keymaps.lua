@@ -55,11 +55,7 @@ map('n', "+", "<Cmd>vertical resize +2<CR>")
 -- Plugins
 --------------
 -- Comment
-if vim.fn.has("linux") or vim.fn.has("win32") then
-    vim.keymap.set('n', '<C-_>', require('Comment.api').toggle.linewise.current)  -- The origin key command is 'gcc'
-else
-    vim.keymap.set('n', '<C-/>', require('Comment.api').toggle.linewise.current)  -- The origin key command is 'gcc'
-end
+vim.keymap.set('n', '<C-/>', require('Comment.api').toggle.linewise.current)  -- The origin key command is 'gcc'
 
 -- nvim-tree
 mmap('<F1>', "<Cmd>NvimTreeToggle<CR>")
