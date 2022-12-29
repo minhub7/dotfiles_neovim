@@ -77,12 +77,12 @@ map('n', '<leader>fb', "<Cmd>Telescope buffers<CR>")
 map('n', '<leader>fh', "<Cmd>Telescope help_tags<CR>")
 
 -- barbar
-mmap('<A-h>', '<Cmd>BufferPrevious<CR>')    -- move to previous
-mmap('<A-l>', '<Cmd>BufferNext<CR>')    -- move to next
-mmap('<S-A-h>', '<Cmd>BufferMovePrevious<CR>')    -- re-order to previous
-mmap('<S-A-l>', '<Cmd>BufferMoveNext<CR>')    -- re-order to next
-mmap('<A-p>', '<Cmd>BufferPin<CR>')    -- Pin buffer
-mmap('<A-q>', '<Cmd>BufferClose<CR>')    -- close buffer  
+mmap('˙', '<Cmd>BufferPrevious<CR>')    -- move to previous
+mmap('¬', '<Cmd>BufferNext<CR>')    -- move to next
+mmap('Ó', '<Cmd>BufferMovePrevious<CR>')    -- re-order to previous
+mmap('Ò', '<Cmd>BufferMoveNext<CR>')    -- re-order to next
+mmap('π', '<Cmd>BufferPin<CR>')    -- Pin buffer
+mmap('œ', '<Cmd>BufferClose<CR>')    -- close buffer  
 
 -- LSP
 --nmap('K', '<cmd>Lspsaga hover_doc<cr>')
