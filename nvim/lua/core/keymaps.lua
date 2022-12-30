@@ -18,7 +18,6 @@ function mmap(shortcut, command)
     map('i', shortcut, command)
     map('t', shortcut, command)
 end
-
 vim.g.mapleader = ' '
 
 --------------
