@@ -38,7 +38,6 @@ return require('packer').startup(function(use)
 	-- Utilities
 	-- Auto completion
 	use "hrsh7th/nvim-cmp"
-    use {'tzachar/cmp-tabnine', run='./install.sh'}
 	use "hrsh7th/cmp-buffer"
 	use "hrsh7th/cmp-path"
 	use "hrsh7th/cmp-cmdline"
@@ -76,13 +75,12 @@ return require('packer').startup(function(use)
     use "nvim-telescope/telescope.nvim"  -- configurations for fuzzy finder (file explorer)
     use "nvim-telescope/telescope-media-files.nvim"
     
-    -- git
+    -- git & markdown
     use "lewis6991/gitsigns.nvim"
 
     use {"akinsho/toggleterm.nvim", tag='*', config=function() require('toggleterm').setup() end}
-	-- use {'iamcco/markdown-preview.nvim', run=function() vim.fn['mkdp#util#install']() end}  -- markdown preview on local website
+	use {'iamcco/markdown-preview.nvim', run=function() vim.fn['mkdp#util#install']() end}  -- markdown preview on local website
 	use "lukas-reineke/indent-blankline.nvim"
-	use "plasticboy/vim-markdown"
 
 
     if PACKER_BOOTSTRAP then

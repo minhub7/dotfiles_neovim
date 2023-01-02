@@ -18,6 +18,7 @@ function mmap(shortcut, command)
     map('i', shortcut, command)
     map('t', shortcut, command)
 end
+
 vim.g.mapleader = ' '
 
 --------------
@@ -80,8 +81,7 @@ mmap('π', '<Cmd>BufferPin<CR>')    -- Pin buffer
 mmap('œ', '<Cmd>BufferClose<CR>')    -- close buffer  
 
 -- LSP
---nmap('K', '<cmd>Lspsaga hover_doc<cr>')
---imap('<C-k>', '<cmd>Lspsaga hover_doc<cr>')
+map('n', 'K', '<cmd>Lspsaga hover_doc<cr>')
 --nmap('gh', '<cmd>Lspsaga lsp_finder<cr>')
 --nmap('<C-e>', '<cmd>Lspsaga show_line_diagnostics<CR>')
 
