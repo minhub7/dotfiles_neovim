@@ -35,7 +35,17 @@ return require('packer').startup(function(use)
     use "nvim-tree/nvim-tree.lua"  -- configurations for nvim-tree (file explorer/in sidebar)
     use "tpope/vim-surround"  -- add, delete, change surroundings
 
-	-- Utilities
+	-- Colorscheme
+    use "EdenEast/nightfox.nvim"
+    -- use "folke/tokyonight.nvim"
+    -- use "ellisonleao/gruvbox.nvim"
+
+    -- Status
+    use "feline-nvim/feline.nvim"
+    use {"romgrk/barbar.nvim", wants='nvim-web-devicons'}
+    -- use {"nvim-lualine/lualine.nvim", requires={ 'nvim-tree/nvim-web-devicons', opt=true }}
+
+    -- Utilities
 	-- Auto completion
 	use "hrsh7th/nvim-cmp"
 	use "hrsh7th/cmp-buffer"
@@ -56,14 +66,6 @@ return require('packer').startup(function(use)
     -- snippets
     use "L3MON4D3/LuaSnip"
     use "rafamadriz/friendly-snippets"
-
-	-- Colorscheme & status
-    use "EdenEast/nightfox.nvim"
-    use "feline-nvim/feline.nvim"
-    use {"romgrk/barbar.nvim", wants='nvim-web-devicons'}
-    -- use "folke/tokyonight.nvim"
-    -- use "ellisonleao/gruvbox.nvim"
-    -- use {"nvim-lualine/lualine.nvim", requires={ 'nvim-tree/nvim-web-devicons', opt=true }} -- or kyazdani42/nvim-web-devicons
 
     -- treesitter
     use {"nvim-treesitter/nvim-treesitter", run=":TSUpdate"}  -- configurations for nvim-treesitter
