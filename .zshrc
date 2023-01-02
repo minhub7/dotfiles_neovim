@@ -87,7 +87,7 @@ source $ZSH/oh-my-zsh.sh
 alias ls="lsd --no-symlink"
 alias ll="lsd -l --no-symlink"
 alias lt="lsd --tree --no-symlink"
-alias la="lsd -a --no-symlink"
+alias la="lsd -al --no-symlink"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
